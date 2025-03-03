@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>SELF INTRODUCTION</h1></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="js demo.js"></script>
+<style>
+    p.round2{
+        border: 2px solid black;
+        border-radius:20px;
+        padding: 50px;
+    }
+    body{
+        background-color:lightgoldenrodyellow;
+    }
+header {
+    background: lightblue;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 10;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+    <header>
+        <center><h1>SELF INTRODUCTION</h1></center>
+        <nav>
+            <ul> <h3>
+                <li><a href="INTRO.html">INTRO</a></li>
+                <li><a href="PROJECT.html">PROJECT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="Hobbies.html">SKILLS</a></li></h3>
+            </ul>
+        </nav>
+    </header>
+        <center><h2 ><img src="https://tse4.mm.bing.net/th?id=OIP.kJi2aIhEMe8x-7lU1tQjjwHaHa&pid=Api&P=0&h=180"height="150",width="200"></center>
+          
+
+ <div class="accordion">
+    <button class="accordion-btn">MY NAME IS :-</button>
+    <div class="accordion-content">
+        <p>Vaishnavi Nandkumar Khot</p>
+    </div>
+    
+    <button class="accordion-btn">I AM FROM :-</button>
+    <div class="accordion-content">
+        <p>Shivanakwadi</p>
+    </div>
+    
+    <button class="accordion-btn">I AM PASSOUT FROM :-</button>
+    <div class="accordion-content">
+        <p>Govindarao junior collage ichalakaranji.</p>
+    </div>
+
+    <button class="accordion-btn"> NOW RESENTLY STUDING IN:-</button>
+    <div class="accordion-content">
+        <p>S.Y.B.Tech(CSE) in D.Y.Patil University ,Kolhapur.</p>
+    </div>
+</div>
+
+<style>
+    .accordion-btn {
+        background-color: pink;
+        color: white;
+        padding: 15px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .accordion-btn:hover {
+        background-color:seagreen;
+    }
+
+    .accordion-content {
+        padding: 10px 0;
+        background-color: #f4f4f4;
+        display: none;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .active + .accordion-content {
+        display: block;
+    }
+</style>
+
+<script>
+    const accordionBtns = document.querySelectorAll('.accordion-btn');
+    accordionBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+            const content = btn.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
